@@ -516,7 +516,8 @@ var producGame = {
         if (data) {
             console.info(data.msg)
             if (data.msg.indexOf('防刷策略接口校验不通过') !== -1) {
-                throw new Error('出现【防刷策略接口校验不通过】, 取消本次执行')
+//                 throw new Error('出现【防刷策略接口校验不通过】, 取消本次执行')
+                console.error('获取奖励失败')
             }
             console.reward('flow', 100)
         } else {
@@ -545,7 +546,8 @@ var producGame = {
         if (data) {
             console.info(data.msg)
             if (data.msg.indexOf('防刷策略接口校验不通过') !== -1) {
-                throw new Error('出现【防刷策略接口校验不通过】, 取消本次执行')
+//                 throw new Error('出现【防刷策略接口校验不通过】, 取消本次执行')
+                console.error('获取奖励失败')
             }
             console.reward('integral', 5)
         } else {
